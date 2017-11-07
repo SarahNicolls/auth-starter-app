@@ -40,6 +40,11 @@ module.exports = {
             throw "email and password comination is invalid";
           }
 
+          // *** #11 for auth
+          //remove password before generated jwt
+          //because the jwt is public info
+          delete user.password;
+
           // if not, just reply with that user
           //STOPPPPPPPPP
           // before #10 it was a return reply(err)

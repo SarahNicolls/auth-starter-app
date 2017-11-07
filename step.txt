@@ -49,5 +49,5 @@ already have used that email, throw an error message if it's in use
         -method will create a json web token using the 'jsonwebtoken' 
         package method 'jwt.sign(data, secretKey, optionsObject)'
 
-11. Improve login to generate a JSON web token before seeing the 
+11. Improve login to generate a JSON web token before sending the 
 authenticated user back to the HTTP response
