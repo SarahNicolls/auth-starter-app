@@ -17,6 +17,27 @@ module.exports.register = (server, options, next) => {
     models: models
   });
 
+  // *** #3 for auth (next go to routes/users/create and login)
+  // set our authentication strategy to use
+  // JSON web tokens
+  // when a route has 'auth.mode' as 'optional',
+  // the server will check for an 'Authorization' header
+  // and use the key we define below to check its validitiy
+  server.auth.strategy("jwt", "jwt", {
+    key: "supersecretsecret",
+    validateFunc: (decoded, request, callback) => {
+      if (!decoded.id) return callback(null, false);
+      else return callback(null, true);
+    },
+    verifyOptions: {
+      algorithms: ["HS256"]
+    }
+  });
+  // multiple authentication schemes can be setup in one server/api
+  // Here we are setting the default scheme to be used unless otherwise
+  // specificed per route
+  server.auth.default({ strategy: "jwt" });
+
   // adds each route config as an API ENDPOINT
   // ENDPOINT - an address adn method combo that will trigger a server function
   // and provide a response bsack to the requester

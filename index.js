@@ -1,5 +1,8 @@
 // bringing in hapi to set up our server
 const hapi = require("hapi");
+const hapiAuthJwt = require("hapi-auth-jwt2");
+// *** #1 yard add in terminal
+// *** #2 for auth add hapiAuthJwt
 
 // bringing in our api plug in to register api endpoints(routes)
 const api = require("./api");
@@ -29,6 +32,8 @@ server.connection({
 // more often than not is a pre build package we install
 server
   .register([
+    // *** #2 for auth (next go to api.js)
+    hapiAuthJwt,
     {
       register: api
     }

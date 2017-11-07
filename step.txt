@@ -20,8 +20,9 @@ AUTHENTICATION SETUP
 
 6. Modify user model to execute 'generatePassword()' before saving a new user
 
-7. Improve our signup/create user endpoint by first filtering by email to see 
-if any other users already have used that email, throw an error message if it's in use
+7. Improve our signup/create process by first filtering by 
+email in the User.pre("save") event of the User Model to see if any other users 
+already have used that email, throw an error message if it's in use
 
 8. Modify user moder to include methods to:
     Methods:
@@ -40,7 +41,7 @@ if any other users already have used that email, throw an error message if it's 
     - else if no user was found, throw an error message: 'email and password
     combination do not match'
     -if result of compare was successful, return the authenticated user, else
-    throw an error saying: 'email and passworkd combo do not match'
+    throw an error saying: 'email and password combo do not match'
 
 10. Modify user model to include methods to:
     Methods: 
@@ -48,5 +49,5 @@ if any other users already have used that email, throw an error message if it's 
         -method will create a json web token using the 'jsonwebtoken' 
         package method 'jwt.sign(data, secretKey, optionsObject)'
 
-11. Improve login to generate a JSON web token before seing the 
+11. Improve login to generate a JSON web token before seeing the 
 authenticated user back to the HTTP response

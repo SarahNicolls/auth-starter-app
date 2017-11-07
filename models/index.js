@@ -6,7 +6,7 @@ const userModel = require("./user");
 // and finally starts the connection(turns it on)
 // this is what causes your server to blow up if RETHINKDB is not running
 const db = thinky({
-  db: "firstAuthApi"
+  db: "authWalkThrough"
 });
 
 //when we require ./user, we get that function and calling it directly and then
