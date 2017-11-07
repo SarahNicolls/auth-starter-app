@@ -3,3 +3,6 @@ module.exports = [
   require("./login"),
   require("./getById")
 ];
+
+// exporting each config object as part on an array
+//

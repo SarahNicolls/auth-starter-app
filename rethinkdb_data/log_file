@@ -16,3 +16,18 @@
 2017-11-06T11:54:30.031353000 9.076946s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: Starting a new Raft election for term 1.
 2017-11-06T11:54:30.031686000 9.077280s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: Added replica on this server.
 2017-11-06T11:54:30.052140000 9.097733s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: This server is Raft leader for term 1. Latest log index is 0.
+2017-11-07T09:37:51.456820000 0.055521s notice: Recursively removing directory /Users/sarahnicolls/Documents/devtreeacademy/week9/auth-starter-app/rethinkdb_data/tmp
+2017-11-07T09:37:51.461351000 0.060059s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-11-07T09:37:51.469733000 0.068436s notice: Running on Darwin 16.1.0 x86_64
+2017-11-07T09:37:51.469821000 0.068521s notice: Loading data from directory /Users/sarahnicolls/Documents/devtreeacademy/week9/auth-starter-app/rethinkdb_data
+2017-11-07T09:37:51.518144000 0.116844s info: Automatically using cache size of 359 MB
+2017-11-07T09:37:51.519244000 0.117945s notice: Listening for intracluster connections on port 29015
+2017-11-07T09:37:51.551873000 0.150573s notice: Listening for client driver connections on port 28015
+2017-11-07T09:37:51.552188000 0.150888s notice: Listening for administrative HTTP connections on port 8080
+2017-11-07T09:37:51.552191000 0.150891s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-11-07T09:37:51.552193000 0.150893s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-11-07T09:37:51.552202000 0.150902s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-11-07T09:37:51.552204000 0.150904s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-11-07T09:37:51.552206000 0.150905s notice: Server ready, "isaiahs_mbp_lan_n39" fbdbe9cb-905c-4b66-abb3-c7c4ea901924
+2017-11-07T09:37:52.796239000 1.394882s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: Starting a new Raft election for term 2.
+2017-11-07T09:37:52.826177000 1.424820s info: Table 1da75633-0fbf-47ac-a514-3650e7465c92: This server is Raft leader for term 2. Latest log index is 3.
